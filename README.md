@@ -97,7 +97,7 @@ This folder contains all code, collected data, and presentation work from our pr
 
 # Contact Information
 * Channing Smith, smithcs@g.cofc.edu, College of Charleston <br />
-* Joel Ward, joelbenward@gmail.com, Cedarville University <br />
+* Joel Ward, joelward@cedarville.edu., Cedarville University <br />
 * Chenggang Wang, wang2c9@mail.uc.edu, University of Cincinnati <br />
 
 * Mentors: 
