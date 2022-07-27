@@ -35,7 +35,7 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
  * ```code/cw305_fpga_trogan``` contains a sample aes implementation for use with the ChipWhisperer CW305 FPGA board. It also includes a sample project and information on how to generate a bitstream.
  * ```datasets/``` contains datasets collected by REU students
  * ```results/``` contains an example info-sheet for a dataset
- * ```crypto/``` contains the AES implementations leveraged by students with the ChipWhisperer platform. Their original implementations can be found here, here, and here.
+ * ```crypto/``` contains the AES implementations leveraged by students with the ChipWhisperer platform. Their original implementations can be found [here](https://github.com/Ko-/aes-armcortexm), [here](https://github.com/ANSSI-FR/secAES-ATmega8515), and [here](https://github.com/kokke/tiny-AES-c).
 
  
  # EM Data Collection Setup
