@@ -57,6 +57,7 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
   * STM32 masked PC1 and PC2
 * Perform Normal Inter-Class Variance (NICV) to identify and locate leakage within a defined attack window.
   * ```code/analysis/NICV/```
+  * An example of an NICV graph collected can be found [here](NICV_XMEGAun_example.png)
 * Perform Signal to Noise Ratio (SNR)
   * ```code/analysis/SNR/```
 * Run CPA attack to recover keys
