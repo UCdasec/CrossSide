@@ -60,6 +60,7 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
   * An example of an NICV graph collected can be found [here](NICV_XMEGAun_example.png)
 * Perform Signal to Noise Ratio (SNR)
   * ```code/analysis/SNR/```
+  * An example of an SNR graph collected can be found [here](SNR_XMEGAmask_example.png)
 * Run CPA attack to recover keys
   * ```code/analysis/CPA/```
 * Train and test data using Convolutional Neural Network (CNN)
