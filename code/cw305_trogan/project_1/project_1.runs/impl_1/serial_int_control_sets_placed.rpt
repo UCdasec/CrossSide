@@ -1,0 +1,212 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Fri Jul 22 11:01:55 2022
+| Host         : erc528-OptiPlex-7050 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_control_sets -verbose -file serial_int_control_sets_placed.rpt
+| Design       : serial_int
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   134 |
+|    Minimum number of control sets                        |   134 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   790 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   134 |
+| >= 0 to < 4        |   130 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            5419 |         2438 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             385 |          191 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             262 |           72 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------+-------------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------+-------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | c_i_1_n_0               |                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | trig_i_2_n_0            | trig_i_1_n_0            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | state[78]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[93]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[79]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[80]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[81]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[82]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[83]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[84]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[85]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[86]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[87]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[88]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[89]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[90]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[91]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[92]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[62]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[77]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[76]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[75]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[74]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[73]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[72]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[71]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[70]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[69]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[68]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[67]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[66]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[65]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[64]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[63]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[127]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[119]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[111]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[112]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[113]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[114]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[115]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[116]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[117]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[118]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[110]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[120]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[121]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[122]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[123]              |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[124]              |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[125]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[126]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[94]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[109]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[108]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[107]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[106]              |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[105]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[104]              |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[103]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[102]              |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[101]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[100]              |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[99]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[98]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[97]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[96]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[95]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[14]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[29]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[28]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[27]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[26]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[25]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[24]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[23]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[22]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[21]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[20]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[19]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[18]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[17]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[16]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[15]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[60]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[13]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[12]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[11]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[10]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[8]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[7]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[9]                |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[6]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[5]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[4]                |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[3]                |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[2]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[1]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[0]                |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[31]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[61]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[59]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[58]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[57]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[56]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[55]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[54]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[53]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[52]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[51]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[50]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[49]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[48]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[47]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[46]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[44]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[30]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[32]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[33]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[34]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[35]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[36]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[37]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[38]               |                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | state[39]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[40]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[41]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[42]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[43]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | state[45]               |                         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | trig_i_2_n_0            | handshake0              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | ciphertext[127]_i_1_n_0 |                         |               43 |            128 |         2.98 |
+|  clk_IBUF_BUFG | trig_i_2_n_0            | ciphertext[127]_i_1_n_0 |               69 |            256 |         3.71 |
+|  clk_IBUF_BUFG |                         |                         |             2438 |           5419 |         2.22 |
++----------------+-------------------------+-------------------------+------------------+----------------+--------------+
+
+

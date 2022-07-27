@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+02:56:52
+/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/aes_128.v,1658169615,verilog,,/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v,,aes_128;expand_key_128,,,,,,,,
+/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v,1350386446,verilog,,/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v,,final_round;one_round,,,,,,,,
+/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v,1350386446,verilog,,/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/sources_1/new/serial_int.v,,S;S4;T;table_lookup;xS,,,,,,,,
+/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/sources_1/new/serial_int.v,1658497512,verilog,,,,serial_int,,,,,,,,

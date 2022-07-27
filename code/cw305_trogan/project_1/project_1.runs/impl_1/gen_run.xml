@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-2" LaunchTime="1658501800">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="serial_int.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="serial_int.ltx"/>
+  <File Type="BG-BGN" Name="serial_int.bgn"/>
+  <File Type="RNPI_FILE" Name="serial_int.rnpi"/>
+  <File Type="BG-DRC" Name="serial_int.drc"/>
+  <File Type="CFI_FILE" Name="serial_int.cfi"/>
+  <File Type="RCFI_FILE" Name="serial_int.rcfi"/>
+  <File Type="BITSTR-MMI" Name="serial_int.mmi"/>
+  <File Type="BITSTR-BMM" Name="serial_int_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="serial_int.nky"/>
+  <File Type="BITSTR-RBT" Name="serial_int.rbt"/>
+  <File Type="RBD_FILE" Name="serial_int.rbd"/>
+  <File Type="BITSTR-MSK" Name="serial_int.msk"/>
+  <File Type="NPI_FILE" Name="serial_int.npi"/>
+  <File Type="BG-BIN" Name="serial_int.bin"/>
+  <File Type="PDI-FILE" Name="serial_int.pdi"/>
+  <File Type="BG-BIT" Name="serial_int.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="serial_int_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="serial_int_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="serial_int_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="serial_int_timing_summary_postroute_physopted.rpx"/>
+  <File Type="RDI-RDI" Name="serial_int.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="serial_int_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="serial_int_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="serial_int_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="serial_int_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="serial_int_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="serial_int_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="serial_int_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="serial_int_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="serial_int_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="serial_int_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="serial_int_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="serial_int_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="serial_int_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="serial_int_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="serial_int_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="serial_int_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="serial_int_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="serial_int_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="serial_int_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="serial_int_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="serial_int_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="serial_int_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="serial_int_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="serial_int_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="serial_int_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="serial_int_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="serial_int_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="serial_int_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="serial_int_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="serial_int_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="serial_int_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="serial_int_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="serial_int_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="serial_int_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="serial_int_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="serial_int_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="serial_int_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="serial_int_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="serial_int_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="serial_int_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="serial_int_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="serial_int_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="serial_int.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="serial_int_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="serial_int_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="serial_int_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="serial_int_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="serial_int_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="serial_int_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="serial_int_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="serial_int.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../AES-T500/src/TjFree/aes_128.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../AES-T500/src/TjFree/round.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../AES-T500/src/TjFree/table.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/serial_int.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../AES-T500/src/TjFree/test_aes_128.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="serial_int"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../Downloads/cw305_main.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/test_aes_128.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

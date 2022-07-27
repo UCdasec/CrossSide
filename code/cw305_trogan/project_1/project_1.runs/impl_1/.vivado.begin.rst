@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="erc528" Host="erc528-OptiPlex-7050" Pid="19126" HostCore="4" HostMemory="16110832">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="erc528" Host="erc528-OptiPlex-7050" Pid="22076" HostCore="4" HostMemory="16110832">
+    </Process>
+</ProcessHandle>

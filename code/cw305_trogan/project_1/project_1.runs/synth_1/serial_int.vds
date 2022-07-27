@@ -1,0 +1,691 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Jul 22 10:56:43 2022
+# Process ID: 18500
+# Current directory: /home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.runs/synth_1
+# Command line: vivado -log serial_int.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source serial_int.tcl
+# Log file: /home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.runs/synth_1/serial_int.vds
+# Journal file: /home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.runs/synth_1/vivado.jou
+# Running On: erc528-OptiPlex-7050, OS: Linux, CPU Frequency: 3400.000 MHz, CPU Physical cores: 4, Host memory: 16497 MB
+#-----------------------------------------------------------
+source serial_int.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/utils_1/imports/synth_1/test_aes_128.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/utils_1/imports/synth_1/test_aes_128.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top serial_int -part xc7a35tftg256-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Vivado_Tcl 4-1101] Global synthesis options have changed for the design, incremental synthesis will not be run
+INFO: [Device 21-403] Loading part xc7a35tftg256-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18556
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2599.770 ; gain = 0.000 ; free physical = 5848 ; free virtual = 11899
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'serial_int' [/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/sources_1/new/serial_int.v:22]
+INFO: [Synth 8-6157] synthesizing module 'aes_128' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/aes_128.v:18]
+INFO: [Synth 8-6157] synthesizing module 'expand_key_128' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/aes_128.v:60]
+INFO: [Synth 8-6157] synthesizing module 'S4' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:32]
+INFO: [Synth 8-6157] synthesizing module 'S' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'S' (1#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'S4' (2#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'expand_key_128' (3#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/aes_128.v:60]
+INFO: [Synth 8-6157] synthesizing module 'one_round' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v:18]
+INFO: [Synth 8-6157] synthesizing module 'table_lookup' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:17]
+INFO: [Synth 8-6157] synthesizing module 'T' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:45]
+INFO: [Synth 8-6157] synthesizing module 'xS' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'xS' (4#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'T' (5#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'table_lookup' (6#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/table.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'one_round' (7#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v:18]
+INFO: [Synth 8-6157] synthesizing module 'final_round' [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'final_round' (8#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/round.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'aes_128' (9#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/AES-T500/src/TjFree/aes_128.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'serial_int' (10#1) [/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.srcs/sources_1/new/serial_int.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2599.770 ; gain = 0.000 ; free physical = 5683 ; free virtual = 11741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.770 ; gain = 0.000 ; free physical = 6550 ; free virtual = 12610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.770 ; gain = 0.000 ; free physical = 6550 ; free virtual = 12610
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2599.770 ; gain = 0.000 ; free physical = 6592 ; free virtual = 12652
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/erc528/Downloads/cw305_main.xdc]
+Finished Parsing XDC File [/home/erc528/Downloads/cw305_main.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/erc528/Downloads/cw305_main.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/serial_int_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/serial_int_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.711 ; gain = 0.000 ; free physical = 6469 ; free virtual = 12563
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2631.711 ; gain = 0.000 ; free physical = 6469 ; free virtual = 12563
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6543 ; free virtual = 12637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6543 ; free virtual = 12637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6543 ; free virtual = 12637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6538 ; free virtual = 12635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6538 ; free virtual = 12635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6540 ; free virtual = 12641
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Global synthesis options have changed
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      8 Bit         XORs := 154   
++---Registers : 
+	              128 Bit    Registers := 27    
+	               32 Bit    Registers := 40    
+	                8 Bit    Registers := 344   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---ROMs : 
+	                    ROMs := 344   
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2631.711 ; gain = 31.941 ; free physical = 6459 ; free virtual = 12569
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 344, Available = 100. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:41 ; elapsed = 00:03:46 . Memory (MB): peak = 2992.484 ; gain = 392.715 ; free physical = 5965 ; free virtual = 12068
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:42 ; elapsed = 00:03:47 . Memory (MB): peak = 3006.484 ; gain = 406.715 ; free physical = 5952 ; free virtual = 12054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r7/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r8/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/r9/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_1/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_1/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_1/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_1/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_2/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_2/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_2/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_2/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_3/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_3/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_3/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_3/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_4/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_4/S_3/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_4/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance enc_inst/rf/S4_4/S_1/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:45 ; elapsed = 00:03:51 . Memory (MB): peak = 3024.516 ; gain = 424.746 ; free physical = 5931 ; free virtual = 12033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:49 ; elapsed = 00:03:55 . Memory (MB): peak = 3031.453 ; gain = 431.684 ; free physical = 5930 ; free virtual = 12033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:49 ; elapsed = 00:03:55 . Memory (MB): peak = 3031.453 ; gain = 431.684 ; free physical = 5930 ; free virtual = 12033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:50 ; elapsed = 00:03:56 . Memory (MB): peak = 3031.453 ; gain = 431.684 ; free physical = 5931 ; free virtual = 12034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:51 ; elapsed = 00:03:56 . Memory (MB): peak = 3031.453 ; gain = 431.684 ; free physical = 5931 ; free virtual = 12034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:51 ; elapsed = 00:03:56 . Memory (MB): peak = 3034.422 ; gain = 434.652 ; free physical = 5931 ; free virtual = 12034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:51 ; elapsed = 00:03:56 . Memory (MB): peak = 3034.422 ; gain = 434.652 ; free physical = 5931 ; free virtual = 12034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     4|
+|3     |LUT1     |    17|
+|4     |LUT2     |  1613|
+|5     |LUT3     |   450|
+|6     |LUT4     |   342|
+|7     |LUT5     |     5|
+|8     |LUT6     |  7089|
+|9     |MUXF7    |  2901|
+|10    |MUXF8    |  1450|
+|11    |RAMB18E1 |    50|
+|13    |FDRE     |  6066|
+|14    |IBUF     |     3|
+|15    |OBUF     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:51 ; elapsed = 00:03:56 . Memory (MB): peak = 3034.422 ; gain = 434.652 ; free physical = 5931 ; free virtual = 12034
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:49 ; elapsed = 00:03:54 . Memory (MB): peak = 3034.422 ; gain = 402.711 ; free physical = 5985 ; free virtual = 12088
+Synthesis Optimization Complete : Time (s): cpu = 00:03:51 ; elapsed = 00:03:56 . Memory (MB): peak = 3034.430 ; gain = 434.652 ; free physical = 5985 ; free virtual = 12088
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3034.430 ; gain = 0.000 ; free physical = 6082 ; free virtual = 12189
+INFO: [Netlist 29-17] Analyzing 4405 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3034.430 ; gain = 0.000 ; free physical = 6033 ; free virtual = 12140
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a0c11146
+INFO: [Common 17-83] Releasing license: Synthesis
+139 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:03 ; elapsed = 00:04:04 . Memory (MB): peak = 3034.430 ; gain = 434.734 ; free physical = 6606 ; free virtual = 12713
+INFO: [Common 17-1381] The checkpoint '/home/erc528/chipwhisperer/jupyter/vivado_projects/project_1/project_1.runs/synth_1/serial_int.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file serial_int_utilization_synth.rpt -pb serial_int_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 22 11:01:00 2022...
