@@ -65,6 +65,8 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
 
 
 # Power Trace Data Collection Process
+* Compile rewritten AES encryption code and load onto XMEGA target
+  * ```code/instruction_rewriting/XMEGA/``` 
 * Collect 2 50k Power datasets
   * XMEGA masked PC2
   * XMEGA rewritten PC2
@@ -76,9 +78,10 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
   * ```code/analysis/CPA/```
 * Train and test data using Convolutional Neural Network (CNN)
   * ```code/analysis/CNN/```
-  * Firstly, train and test in the same-device scenario.
-  * Move on to cross-device after completion. 
+  * Firstly, train and test masked AES in the same-software scenario.
+  * Move on to test rewritten AES 
   * For both scenarios, use 40k for training and 10k for testing
+  * Test original masked AES attack window and adjusted attack window based on NICV results
 
 
 
