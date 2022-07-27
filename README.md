@@ -1,10 +1,7 @@
 # CrossSide
 # Project 1 - Robust Deep-learning-based Side-Channel Attacks
-Channing Smith, College of Charleston <br />
-Joel Ward, Cedarville University <br />
-Chenggang Wang, University of Cincinnati <br />
 
-Mentors: Dr. Boyang Wang, Dr. Marty Emmert
+This folder contains all code, collected data, and presentation work from our project on Robust Deep-Learning-based Side-Channel Attacks. It highlights background information, objectives, analysis steps, and explains all the necessary steps we took to obtain our results. 
 
 # Side-Channel Attacks (SCA)
 * An attacker analyzes power or electromagnetic (EM) signals of a target (microcontroller or FPGA) when it runs encryption algorithm (e.g., AES) and recovers encryption keys.
@@ -28,7 +25,7 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
  * Task 2: Study instruction rewriting in assembly on AVR XMEGA and ARM STM32 as well as examine the impact of instructions rewriting in deep learning side channel attacks.
  * Task 3: Collect EM traces of AES encryption compiled with different optimizations and study the optimizations’ effects.
  
- # Content:
+ # Content
  * ```code/instruction_rewriting/``` contains rewritten AES assembly files and instructions on how to use them
  * ```code/data_collection/``` contains scripts for capturing power and EM traces using the ChipWhisperer CW308 UFO board and STM32 or XMEGA target boards
  * ```code/analysis/``` provides code that analyzes data captured with the ChipWhisperer platform. It contains the files to run NICV, CPA, SNR, and train and test a CNN
@@ -50,11 +47,14 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
    * Setup image can be found [here](EM_probe_setup.png)
 
 # EM Data Collection Process
-* Collect 8 50k EM datasets
+* Collect 6 50k EM datasets
   * XMEGA unmasked PC1 and PC2
   * XMEGA masked PC1 and PC2
   * STM32 unmasked PC1 and PC2
-  * STM32 masked PC1 and PC2
+* Attack Windows: We use the term attack window to denote the corresponding subsequence of power/EM consumption associated with SubBytes of the first round of AES-128.
+  * XMEGA unmasked AES: [1800, 2800], (offset = 0)
+  * XMEGA masked AES: [1600, 4500], (offset = 17,500] 
+  * STM32 unmasked AES: [1200, 2200], (offset = 0)
 * Perform Normal Inter-Class Variance (NICV) to identify and locate leakage within a defined attack window.
   * ```code/analysis/NICV/```
   * An example of an NICV graph collected can be found [here](NICV_XMEGAun_example.png)
@@ -95,6 +95,14 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
   * For both scenarios, use 40k for training and 10k for testing
   * Test original masked AES attack window and adjusted attack window based on NICV results
 
+# Contact Information
+* Channing Smith, smithcs@g.cofc.edu, College of Charleston <br />
+* Joel Ward, joelbenward@gmail.com, Cedarville University <br />
+* Chenggang Wang, wang2c9@mail.uc.edu, University of Cincinnati <br />
+
+* Mentors: 
+  * Dr. Boyang Wang, wang2ba@ucmail.uc.edu, University of Cincinnati
+  * Dr. Marty Emmert, emmertj@ucmail.uc.edu, University of Cincinnati
 
 
 
