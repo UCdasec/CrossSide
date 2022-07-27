@@ -28,6 +28,16 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
  * Task 2: Study instruction rewriting in assembly on AVR XMEGA and ARM STM32 as well as examine the impact of instructions rewriting in deep learning side channel attacks.
  * Task 3: Collect EM traces of AES encryption compiled with different optimizations and study the optimizations’ effects.
  
+ # Content:
+ * ```code/instruction_rewriting/``` contains rewritten AES assembly files and instructions on how to use them
+ * ```code/data_collection/``` contains scripts for capturing power and EM traces using the ChipWhisperer CW308 UFO board and STM32 or XMEGA target boards
+ * ```code/analysis/``` provides code that analyzes data captured with the ChipWhisperer platform. It contains the files to run NICV, CPA, SNR, and train and test a CNN
+ * ```code/cw305_fpga_trogan``` contains a sample aes implementation for use with the ChipWhisperer CW305 FPGA board. It also includes a sample project and information on how to generate a bitstream.
+ * ```datasets/``` contains datasets collected by REU students
+ * ```results/``` contains an example info-sheet for a dataset
+ * ```crypto/``` contains the AES implementations leveraged by students with the ChipWhisperer platform. Their original implementations can be found here, here, and here.
+
+ 
  # EM Data Collection Setup
  * Computer: Desktop in Dr. Wang's Lab, Linux (Ubuntu 20.04.4), either PC1 or PC2
  * Capture Board: Chipwhisperer Kit
