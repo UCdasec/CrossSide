@@ -60,7 +60,19 @@ Mentors: Dr. Boyang Wang, Dr. Marty Emmert
     * python train.py --input path_to_dataset --output path_to_save_the_model --verbose --target_byte TARGET_BYTE --network_type choose_network_type{hw_model,mlp,cnn2,wang,cnn} --attack_window ATTACK_WINDOW
   * Test:
     * python test.py --input path_to_dataset --output path_to_save_the_test_results --model_file MODEL_FILE --verbose --target_byte TARGET_BYTE --network_type choose_network_type{wang,cnn2,cnn,mlp} --attack_window ATTACK_WINDOW
+# Instruciton Rewriting
+* Causes software discrepancy.
+* Train with masked AES, test with rewritten AES.
+* Rewrote lines of assembly code with 1-3 comparable lines.
+* Focused on SubBytes and addRoundKey routines.
+* 24 lines rewritten.
 
+# Power Traces Data Collection
+* Collect 50k masked AES power traces.
+* Collect 50k rewritten masked AES power traces.
+  * 40k traces for training
+  * 10k traces for testing
+* Run NICV, SNR, and CPA
 
 
 
